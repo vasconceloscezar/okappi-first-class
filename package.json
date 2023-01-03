@@ -10,6 +10,7 @@
     "react-intersection-observer": "^9.4.1",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "styled-components": "^5.3.6"
   },
   "scripts": {

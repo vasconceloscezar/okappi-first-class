@@ -1,3 +1,4 @@
+import Carousel from "../components/Carousel";
 import Content from "../components/Content";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
@@ -11,6 +12,7 @@ export function Home() {
       <Content {...contentOne} />
       <Content {...contentTwo} />
       <Content {...contentThree} />
+      <Carousel />
     </>
   );
 }

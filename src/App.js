@@ -1,5 +1,17 @@
-function App() {
-  return <div>Meu app</div>;
+import { Routes, Route } from "react-router-dom";
+import { Home } from "./pages";
+
+export default function App() {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NoMatch />} />
+      </Routes>
+    </>
+  );
 }
 
-export default App;
+function NoMatch() {
+  return <div>Página não existe</div>;
+}

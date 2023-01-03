@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import GlobalStyle from "./globalStyles";
 import { Home, SignUp } from "./pages";
+import { PricingPage } from "./pages/PricingPage";
 
 export default function App() {
   return (
@@ -10,9 +11,9 @@ export default function App() {
       <GlobalStyle />
       <Navbar />
       <Routes>
-        {/* <Route index element={<Home />} /> */}
-        <Route path="*" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/pricing" element={<PricingPage />} />
       </Routes>
       <Footer />
     </Router>

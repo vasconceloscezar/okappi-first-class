@@ -8,7 +8,7 @@ import { data } from "../../data/NavbarData";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
-  const history = useNavigate();
+  const navigate = useNavigate();
   const location = useLocation();
 
   const handleClick = () => {
@@ -24,7 +24,7 @@ export default function Navbar() {
 
   const closeMenu = (to, id) => {
     if (id && location.pathname === "/") scrollTo(id);
-    history.push(to);
+    navigate(to);
     setShow(false);
   };
 

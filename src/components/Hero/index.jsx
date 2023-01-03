@@ -7,7 +7,7 @@ function Hero() {
     <HeroSection>
       <HeroVideo src="./assets/hero.mp4" autoPlay muted loop />
       <Container>
-        <MainHeading>Eai maluco pronto pra fazer as paratinhas?</MainHeading>
+        <MainHeading>Eai maluco pronto pra fazer as paradinhas?</MainHeading>
         <HeroText>O maior fazedor de paradas do quarteirão</HeroText>
         <ButtonWrapper>
           <Link to="signup">

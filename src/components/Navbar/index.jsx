@@ -34,7 +34,7 @@ export default function Navbar() {
         <NavbarContainer>
           <NavLogo to="/">
             <NavIcon src="./assets/logo.png" />
-            Delta
+            Paradeiros
           </NavLogo>
           <MobileIcon onClick={handleClick}>{show ? <FaTimes /> : <CgMenuRight />}</MobileIcon>
           <NavMenu show={show}>

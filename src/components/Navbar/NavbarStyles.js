@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Container } from "../../globalStyle";
+import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
   background: transparent;

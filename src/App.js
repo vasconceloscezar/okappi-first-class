@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import GlobalStyle from "./globalStyle";
+import GlobalStyle from "./globalStyles";
 import { Home } from "./pages";
 
 export default function App() {
@@ -9,13 +9,17 @@ export default function App() {
       <GlobalStyle />
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NoMatch />} />
+        {/* <Route index element={<Home />} /> */}
+        <Route path="*" element={<Home />} />
       </Routes>
     </>
   );
 }
 
-function NoMatch() {
-  return <div>Página não existe</div>;
-}
+// function NoMatch() {
+//   return (
+//     <Container>
+//       <MainHeading inverse>Página não encontrada</MainHeading>
+//     </Container>
+//   );
+// }

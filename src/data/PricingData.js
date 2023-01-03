@@ -1,40 +1,34 @@
 export const pricingData = [
-	{
-		title: 'Basic',
-		price: '$7.99 user/month after offer period',
-		numAcc: '50-100 accounts',
-		features: ['Secure accounts', 'Best for small business', 'Easy', 'Affordable', '1GB RAM'],
-	},
-	{
-		title: 'Standard',
-		price: '$18.99 user/month after offer period',
-		numAcc: '50-500 accounts',
-		features: [
-			'Secure accounts',
-			'Best for small business',
-			'Customizable',
-			'3GB RAM',
-			'1TB SSD',
-		],
-	},
-	{
-		title: 'Premium',
-		price: '$32.50 user/month after offer period',
-		numAcc: '50-1000 accounts',
-		features: [
-			'Secure accounts',
-			'Best for small business',
-			'Customizable',
-			'Easy Integration',
-			'Development Team',
-			'DNS & Domain included',
-		],
-	},
+  {
+    title: "Básico",
+    price: "R$7,99 usuário/mês após o período de oferta",
+    numAcc: "50-100 contas",
+    features: ["Contas Seguras", "Melhor para pequenas empresas", "Fácil", "Acessível", "1GB de RAM"],
+  },
+  {
+    title: "Padrão",
+    price: "R$18.99 usuário/mês após o período de oferta",
+    numAcc: "50-500 contas",
+    features: ["Contas Seguras", "Melhor para pequenas empresas", "Personalizável", "3GB de RAM", "1TB de SSD"],
+  },
+  {
+    title: "Premium",
+    price: "R$32.50 usuário/mês após o período de oferta",
+    numAcc: "50-1000 contas",
+    features: [
+      "Contas Seguras",
+      "Melhor para pequenas empresas",
+      "Personalizável",
+      "Fácil Integração",
+      "Equipe de Desenvolvimento",
+      "DNS & Domínio incluído",
+    ],
+  },
 
-	{
-		title: 'Enterprise',
-		price: '$55.50 user/month after offer period ',
-		numAcc: '1000+ Accounts',
-		features: ['Unlimited Storage', 'Scalability', 'Free DNS & Domain'],
-	},
+  {
+    title: "Empresarial",
+    price: "R$55.50 usuário/mês após o período de oferta ",
+    numAcc: "1000+ contas",
+    features: ["Armazenamento ilimitado", "Escalabilidade", "DNS & Domínio grátis"],
+  },
 ];

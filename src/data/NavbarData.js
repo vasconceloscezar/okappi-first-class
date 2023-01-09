@@ -1,15 +1,15 @@
-export const data = [
-	{
-		to: '/',
-		text: 'About',
-		id: 'about',
-	},
-	{
-		to: '/pricing',
-		text: 'Pricing',
-	},
-	{
-		to: '/signup',
-		text: 'Contact',
-	},
+export const navbarData = [
+  {
+    to: "/",
+    text: "Sobre",
+    id: "about",
+  },
+  {
+    to: "/pricing",
+    text: "Preços",
+  },
+  {
+    to: "/signup",
+    text: "Contato",
+  },
 ];

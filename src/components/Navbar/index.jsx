@@ -4,7 +4,7 @@ import { FaTimes } from "react-icons/fa";
 import { CgMenuRight } from "react-icons/cg";
 import { useLocation, useNavigate } from "react-router-dom";
 import { MobileIcon, Nav, NavbarContainer, NavIcon, NavItem, NavLinks, NavLogo, NavMenu } from "./NavbarStyles";
-import { data } from "../../data/NavbarData";
+import { navbarData, companyData } from "../../data";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);
@@ -34,11 +34,11 @@ export default function Navbar() {
         <NavbarContainer>
           <NavLogo to="/">
             <NavIcon src="./assets/logo.png" />
-            Paradeiros
+            {companyData.name}
           </NavLogo>
           <MobileIcon onClick={handleClick}>{show ? <FaTimes /> : <CgMenuRight />}</MobileIcon>
           <NavMenu show={show}>
-            {data.map((el, index) => (
+            {navbarData.map((el, index) => (
               <NavItem key={index}>
                 <NavLinks onClick={() => closeMenu(el.to, el.id)}>{el.text}</NavLinks>
               </NavItem>

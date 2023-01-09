@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { heroData } from "../../data";
 import { Button, Container, MainHeading } from "../../globalStyles";
 import { ButtonWrapper, HeroButton, HeroSection, HeroText, HeroVideo } from "./HeroStyles";
 
@@ -7,13 +8,13 @@ function Hero() {
     <HeroSection>
       <HeroVideo src="./assets/hero.mp4" autoPlay muted loop />
       <Container>
-        <MainHeading>Eai maluco pronto pra fazer as paradinhas?</MainHeading>
-        <HeroText>O maior fazedor de paradas do quarteirão</HeroText>
+        <MainHeading>{heroData.mainTitle}</MainHeading>
+        <HeroText>{heroData.text}</HeroText>
         <ButtonWrapper>
           <Link to="signup">
-            <Button>Começe Agora</Button>
+            <Button>{heroData.callToActionButton}</Button>
           </Link>
-          <HeroButton>Descubra Mais</HeroButton>
+          <HeroButton>{heroData.knowMoreButton}</HeroButton>
         </ButtonWrapper>
       </Container>
     </HeroSection>

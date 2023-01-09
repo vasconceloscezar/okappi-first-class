@@ -14,6 +14,7 @@ import {
 } from "./FooterStyles";
 import { footerData, footerSocialData } from "../../data/FooterData";
 import { Row, Section } from "../../globalStyles";
+import { companyData } from "../../data/CompanyData";
 
 export default function Footer() {
   return (
@@ -23,13 +24,12 @@ export default function Footer() {
           <FooterColumn id="footerLogo">
             <FooterLogo to="/">
               <SocialIcon src="./assets/logo.png" />
-              Paradeiros
+              {companyData.name}
             </FooterLogo>
-            <FooterAddress>Rua dos Bobos, 0 - Brasel</FooterAddress>
-
+            <FooterAddress>{companyData.address}</FooterAddress>
             <Row align="center" margin="auto  0 0 0" gap="1rem">
               {footerSocialData.map((social, index) => (
-                <FooterSocialIcon key={index} href="/" target="_blank" aria-label={social.name}>
+                <FooterSocialIcon key={index} href={social.url} target="_blank" aria-label={social.name}>
                   {social.icon}
                 </FooterSocialIcon>
               ))}

@@ -13,7 +13,7 @@ import {
   PricingCardFeature,
   PricingCard,
 } from "./PricingStyles";
-import { pricingData } from "../../data/PricingData";
+import { pricingData } from "../../data";
 import { useNavigate } from "react-router-dom";
 
 export default function Pricing() {
@@ -22,13 +22,12 @@ export default function Pricing() {
     <IconContext.Provider value={{ color: "#a9b3c1", size: "1rem" }}>
       <PricingSection id="pricing">
         <PricingWrapper>
-          <Heading>Escolhe um aí rapaz</Heading>
-
+          <Heading>{pricingData.headingTitle}</Heading>
           <TextWrapper mb="1.4rem" weight="600" size="1.1rem" color="white" align="center">
-            Várias opções, de acordo com o q tu quiser meu bom
+            {pricingData.headingText}
           </TextWrapper>
           <PricingContainer>
-            {pricingData.map((card, index) => (
+            {pricingData.pricingOptions.map((card, index) => (
               <PricingCard key={index}>
                 <PricingCardInfo>
                   <PricingCardPlan>{card.title}</PricingCardPlan>
@@ -39,7 +38,7 @@ export default function Pricing() {
                       <PricingCardFeature key={index}>{feature}</PricingCardFeature>
                     ))}
                   </PricingCardFeatures>
-                  <Button onClick={() => navigate("/signup")}>Começe agora</Button>
+                  <Button onClick={() => navigate("/signup")}>{pricingData.callToActionButton}</Button>
                 </PricingCardInfo>
               </PricingCard>
             ))}

@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 
 export default function Content(props) {
-  const { primary, topLine, headline, description, buttonLabel, img, alt, inverse, reverse } = props;
+  const { primary, topLineText, headline, description, buttonLabel, img, alt, isPrimary, isTextToRight } = props;
   const initial = { opacity: 0, y: 30 };
   const animation = useAnimation();
 
@@ -22,25 +22,25 @@ export default function Content(props) {
   }, [inView, animation]);
 
   return (
-    <Section inverse={inverse} ref={ref}>
+    <Section inverse={isPrimary} ref={ref}>
       <Container>
-        <ContentRow reverse={reverse}>
+        <ContentRow reverse={isTextToRight}>
           <ContentColumn>
             <TextWrapper>
               <TopLine initial={initial} transition={{ delay: 0.3, duration: 0.6 }} animate={animation}>
-                {topLine.text}
+                {topLineText}
               </TopLine>
-              <Heading initial={initial} transition={{ delay: 0.5, duration: 0.6 }} animate={animation} inverse={inverse}>
+              <Heading initial={initial} transition={{ delay: 0.5, duration: 0.6 }} animate={animation} inverse={isPrimary}>
                 {headline}
               </Heading>
-              <Subtitle initial={initial} transition={{ delay: 0.7, duration: 0.6 }} animate={animation} inverse={inverse}>
+              <Subtitle initial={initial} transition={{ delay: 0.7, duration: 0.6 }} animate={animation} inverse={isPrimary}>
                 {description}
               </Subtitle>
               <ContentButton
                 initial={initial}
                 transition={{ delay: 1, duration: 0.6 }}
                 animate={animation}
-                inverse={inverse}
+                inverse={isPrimary}
                 primary={primary}
               >
                 {buttonLabel}

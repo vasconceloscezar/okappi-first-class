@@ -7,40 +7,45 @@ export const footerSocialData = [
   {
     name: "Facebook",
     icon: iconStyle(FaFacebook),
+    url: "https://Facebook.com",
   },
   {
     name: "Instagram",
     icon: iconStyle(FaInstagram),
+    url: "https://Instagram.com",
   },
   {
     name: "YouTube",
     icon: iconStyle(FaYoutube),
+    url: "https://YouTube.com",
   },
   {
     name: "Twitter",
     icon: iconStyle(FaTwitter),
+    url: "https://Twitter.com",
   },
   {
     name: "LinkedIn",
     icon: iconStyle(FaLinkedin),
+    url: "https://LinkedIn.com",
   },
 ];
 
 export const footerData = [
   {
-    title: "Main",
-    links: ["Blog", "FAQs", "Support", "About us"],
+    title: "Principal",
+    links: ["Blog", "FAQs", "Suporte", "Sobre nós"],
   },
   {
-    title: "Product",
-    links: ["Login", "Personal", "Business", "Team"],
+    title: "Produto",
+    links: ["Login", "Pessoal", "Empresa", "Equipe"],
   },
   {
-    title: "Press",
-    links: ["Logos", "Events", "Stories", "Office"],
+    title: "Imprensa",
+    links: ["Logos", "Eventos", "Histórias"],
   },
   {
     title: "Legal",
-    links: ["GDPR", "Privacy Policy", "Terms of Service", "Disclaimer"],
+    links: ["LGPT", "Política de Privacidade", "Termos de Serviços"],
   },
 ];

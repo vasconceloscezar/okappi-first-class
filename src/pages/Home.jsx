@@ -3,20 +3,20 @@ import Carousel from "../components/Carousel";
 import Content from "../components/Content";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
-import { contentOne, contentTwo, contentThree } from "../data/ContentData";
+import { contentData, companyData } from "../data";
 
 export function Home() {
   useEffect(() => {
-    document.title = "Paradonhas";
+    document.title = companyData.name;
   }, []);
 
   return (
     <>
       <Hero />
       <Features />
-      <Content {...contentOne} />
-      <Content {...contentTwo} />
-      <Content {...contentThree} />
+      {contentData.contents.map((content) => (
+        <Content {...content} />
+      ))}
       <Carousel />
     </>
   );

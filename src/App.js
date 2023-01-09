@@ -19,11 +19,3 @@ export default function App() {
     </Router>
   );
 }
-
-// function NoMatch() {
-//   return (
-//     <Container>
-//       <MainHeading inverse>Página não encontrada</MainHeading>
-//     </Container>
-//   );
-// }

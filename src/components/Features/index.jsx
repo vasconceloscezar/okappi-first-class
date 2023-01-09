@@ -9,7 +9,7 @@ import {
   FeatureName,
   FeatureTextWrapper,
 } from "./FeaturesStyles";
-import { featuresData } from "../../data/FeaturesData";
+import { featuresData } from "../../data";
 
 export default function Features() {
   const initial = {
@@ -25,10 +25,10 @@ export default function Features() {
     <Section smPadding="50px 10px" position="relative" inverse id="about">
       <Container>
         <FeatureTextWrapper>
-          <FeatureTitle>Nós oferecemos</FeatureTitle>
+          <FeatureTitle>{featuresData.title}</FeatureTitle>
         </FeatureTextWrapper>
         <FeatureWrapper>
-          {featuresData.map((el, index) => (
+          {featuresData.options.map((el, index) => (
             <FeatureColumn initial={initial} whileInView={animate} transition={{ duration: 0.5 }} key={index}>
               <FeatureImageWrapper className={el.imgClass}>{el.icon}</FeatureImageWrapper>
               <FeatureName>{el.name}</FeatureName>

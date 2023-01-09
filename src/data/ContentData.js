@@ -24,7 +24,7 @@ export const contentData = {
       isTextToRight: true,
       isPrimary: true,
       topLineText: "Nossa Reputação nos Precede",
-      headline: "Porquê escolher os Paradeiros? ",
+      headline: "Porquê escolher a OmegaSec? ",
       description: "Nossos 23 anos de experiência nos permitem usar as melhores e mais inovadoras tecnologias e metodologias",
       buttonLabel: "Fale Conosco",
       linkTo: "/signup",

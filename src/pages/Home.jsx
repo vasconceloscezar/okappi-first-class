@@ -1,9 +1,8 @@
-import { useEffect } from "react";
 import Carousel from "../components/Carousel";
 import Content from "../components/Content";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
-import { contentData, companyData } from "../data";
+import { contentData } from "../data";
 
 export function Home() {
   return (

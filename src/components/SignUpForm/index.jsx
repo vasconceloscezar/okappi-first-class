@@ -13,8 +13,9 @@ import {
 } from "./FormStyles";
 import { Container } from "../../globalStyles";
 import validateFields from "./validateForm";
+import { companyData } from "../../data/CompanyData";
 
-export default function Form() {
+export default function SignUpForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -65,7 +66,10 @@ export default function Form() {
   ];
 
   useEffect(() => {
-    document.title = "Paradonhas - Cadastro";
+    document.title = companyData.name + " - Cadastro";
+    return () => {
+      document.title = companyData.name;
+    };
   }, []);
 
   return (

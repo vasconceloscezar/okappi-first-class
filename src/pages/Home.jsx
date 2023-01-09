@@ -6,10 +6,6 @@ import Hero from "../components/Hero";
 import { contentData, companyData } from "../data";
 
 export function Home() {
-  useEffect(() => {
-    document.title = companyData.name;
-  }, []);
-
   return (
     <>
       <Hero />

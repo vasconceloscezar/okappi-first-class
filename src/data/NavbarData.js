@@ -10,6 +10,6 @@ export const navbarData = [
   },
   {
     to: "/signup",
-    text: "Contato",
+    text: "Cadastro",
   },
 ];

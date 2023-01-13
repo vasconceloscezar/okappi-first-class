@@ -14,7 +14,6 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 50;
   width: 100%;
-
   transition: background-color 0.3s ease-in;
 `;
 
@@ -69,7 +68,7 @@ export const NavMenu = styled.ul`
     width: 100%;
     height: 100vh;
     position: fixed;
-    padding-top: 30%;
+    padding-top: 15%;
     top: 0;
     left: 0;
     opacity: ${({ show }) => (show ? 1 : 0)};

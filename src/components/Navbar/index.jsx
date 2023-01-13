@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IconContext } from "react-icons";
 import { FaTimes } from "react-icons/fa";
 import { CgMenuRight } from "react-icons/cg";
@@ -27,6 +27,10 @@ export default function Navbar() {
     navigate(to);
     setShow(false);
   };
+
+  useEffect(() => {
+    document.body.style.overflow = show ? "hidden" : "visible";
+  }, [show]);
 
   return (
     <IconContext.Provider value={{ color: "#ffffff" }}>

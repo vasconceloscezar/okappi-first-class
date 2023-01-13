@@ -7,6 +7,10 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: 'Montserrat', sans-serif;
   }
+  .fixed_body{
+   overflow: hidden;
+   block-size: 100%;
+ }
 `;
 
 export const Container = styled.div`
@@ -15,7 +19,6 @@ export const Container = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 50px;
-
   @media screen and (max-width: 960px) {
     padding: 0 30px;
   }
